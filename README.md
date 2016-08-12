@@ -1,4 +1,6 @@
 # Hacker | [中文版文档](/README_zh-CN.md)
+> This is a fork from [CodeDaraW](https://github.com/CodeDaraW/Hacker). I've been making some changes. Below is the original README.
+
 __Hacker is a simple style of theme for blog, hoping you focus on writing more rather than the typesetting.__  
 
 At first, [moyo](http://liuxinyu.me/) designed and built it for Wordpress.  

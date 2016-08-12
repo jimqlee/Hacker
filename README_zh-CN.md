@@ -1,5 +1,7 @@
 # Hacker | [English README](/README.md)
 
+> Hacker是fork自[CodeDaraW](https://github.com/CodeDaraW/Hacker)，并做了一些个性化的修改。以下是Hacker的原始README。
+
 __Hacker是一款专注于写作的简洁博客主题。在如此讲究复杂排版的趋势下，选择回归本源，专注于写作这件事。__  
 
 一开始是[moyo](http://liuxinyu.me/)为Wordpress所创作的一个主题，  
