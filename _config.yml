@@ -1,14 +1,17 @@
 menu:
-  Home: /
-  Archives: /archives
+  主页: /
+  归档: /archives
+
 
 # duoshuo comment
 duoshuo: false
-duoshuo_name: 
+duoshuo_name:
 
 # disqus comment
 disqus: false
-disqus_shortname: 
+disqus_shortname:
 
 # google analytics
-googleTrackId: 
+googleTrackId:
+
+avatar: "http://7xt53g.com2.z0.glb.clouddn.com/carton.jpg"

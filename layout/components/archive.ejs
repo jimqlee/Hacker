@@ -10,15 +10,12 @@ if (page.archive){
 
 <article>
 
-  <h2 class="article-title <% if (page.tag){ %> tag<% } else if (page.category){ %> category<% } %>"><%= title %></h2>
-
   <div class="archive">
     <% page.posts.each(function(item){ %>
       <div class="<%= item.layout %> archive">
         <div class="archive-post">
-          <time datetime="<%= item.date.toDate().toISOString() %>">
-            <a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a>
-          </time>
+
+          <div class="archive-title">
           <% if (item.link){ %>
             <% if (item.title){ %>
             <h3 class="archive-title"><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h3>
@@ -28,6 +25,21 @@ if (page.archive){
           <% } else { %>
             <h3 class="archive-title"><a href="<%- config.root %><%- item.path %>"><span><%= item.title %></span></a></h3>
           <% } %>
+
+            <time><%= item.date.format(config.date_format) %></time>
+
+          </div>
+
+          <% if (item.tags && item.tags.length){ %>
+          	<div class="article-tag tagcloud">
+          		<%- list_tags(item.tags, {
+          		    show_count: false,
+          		    class: 'article-tag'
+          		  }) %>
+          	</div>
+          <% } %>
+
+
         </div>
       </div>
     <% }); %>
