@@ -22,7 +22,7 @@ article.archive
         transition box-shadow 0.15s
         box-shadow inset 0 -2px 0 rgba(240, 56, 56, 0)
 
-      &:hover
+      &hover
         color #212121
 
   time
@@ -36,9 +36,9 @@ article.archive
       font-size 1.6rem
       color #9e9e9e
 
-      &:before
+      &before
         content '#'
-      &:hover
+      &hover
         color #F03838
 
 article div .post
@@ -47,10 +47,10 @@ article div .post
     border-bottom 1px solid #eee
 
     div
-            min-height: 42px;
+            min-height 42px
 
 .article-tag
-    float: right;
+    float right
 
 .article-tag-list
     list-style none
@@ -69,3 +69,12 @@ article div .post
 
 .article-tag-list-item a
     color #9e9e9e
+
+.tag-cloud a
+    float left
+    padding 10px
+    height 18px
+    line-height 18px
+    color #9e9e9e
+    min-width 30px
+    margin 10px
