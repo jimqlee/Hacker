@@ -54,8 +54,13 @@
         <%- item.content %>
       <% } %>
     </div>
-
   </div>
+
+  <% if (item.excerpt && index){ %>
+  <div class="article-more">
+      <a href="<%- config.root %><%- item.path %>" title="阅读更多">more</a>
+  </div>
+  <% } %>
 
   <div class="article-footer">
 
